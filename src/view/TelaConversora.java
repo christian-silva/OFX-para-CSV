@@ -82,7 +82,7 @@ public class TelaConversora extends javax.swing.JFrame {
 
         botaoSelecionarOrigem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/ofx_36p.png"))); // NOI18N
         botaoSelecionarOrigem.setText("Selecionar OFX ...");
-        botaoSelecionarOrigem.setToolTipText("FunÁ„o arrasta e solta habilitada");
+        botaoSelecionarOrigem.setToolTipText("Fun√ß√£o arrasta e solta habilitada");
         botaoSelecionarOrigem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoSelecionarOrigemActionPerformed(evt);
@@ -228,7 +228,7 @@ public class TelaConversora extends javax.swing.JFrame {
     private void botaoConverterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoConverterActionPerformed
 
         if (origem != null) {
-            //Faz a transformaÁ„o do OFX para CSV
+            //Faz a transforma√ß√£o do OFX para CSV
             ArrayList<String> arquivoManipulado = FuncaoConvertedora.converter(this.origem);
 //            for (String string : arquivoManipulado) {
 //                System.out.println("> " + string);
@@ -252,17 +252,17 @@ public class TelaConversora extends javax.swing.JFrame {
 
             } catch (IOException ex) {
                 System.err.println("Erro ao gerar o arquivo CSV\n" + ex.getMessage());
-                JOptionPane.showMessageDialog(this, "N„o foi possÌvel gerar o arquivo CSV\n" + ex.getMessage(), "Erro na geraÁ„o do arquivo .csv", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "N√£o foi poss√≠vel gerar o arquivo CSV\n" + ex.getMessage(), "Erro na gera√ß√£o do arquivo .csv", JOptionPane.ERROR_MESSAGE);
             }
         } else {
-            JOptionPane.showMessageDialog(this, "Selecione a Origem do OFX", "Erro na seleÁ„o", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Selecione a Origem do OFX", "Erro na sele√ß√£o", JOptionPane.WARNING_MESSAGE);
         }
 
     }//GEN-LAST:event_botaoConverterActionPerformed
 
     private void botaoSelecionarDestinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSelecionarDestinoActionPerformed
         /**
-         * Respons·vel por abrir uma janela
+         * Respons√°vel por abrir uma janela
          */
         if (origem != null) {
             String nomeUsuarioSistema = System.getProperty("user.name");
@@ -288,7 +288,7 @@ public class TelaConversora extends javax.swing.JFrame {
 
             }
         } else {
-            JOptionPane.showMessageDialog(this, "Selecione a Origem do OFX", "Erro na seleÁ„o", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Selecione a Origem do OFX", "Erro na sele√ß√£o", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_botaoSelecionarDestinoActionPerformed
 
@@ -357,7 +357,7 @@ public class TelaConversora extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     public Image carregaIconeAplicacao(boolean carregar) {
-        // coloca uma figura na barra de tÌtulo da janela
+        // coloca uma figura na barra de t√≠tulo da janela
 
         Image imageRetorno = null;
         if (carregar) {
@@ -367,7 +367,7 @@ public class TelaConversora extends javax.swing.JFrame {
                 imageRetorno = imagemTitulo;
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
-                System.err.println("Erro ao carregar icone da aplicaÁ„o");;
+                System.err.println("Erro ao carregar icone da aplica√ß√£o");;
             }
         }
         return imageRetorno;
@@ -394,7 +394,7 @@ public class TelaConversora extends javax.swing.JFrame {
             @Override
             public void drop(DropTargetDropEvent dtde) {
 
-                // Faz a funÁ„o de arrasta e solta
+                // Faz a fun√ß√£o de arrasta e solta -github
                 dtde.acceptDrop(DnDConstants.ACTION_COPY);
                 Transferable t = dtde.getTransferable();
 
