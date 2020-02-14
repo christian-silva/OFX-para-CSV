@@ -394,7 +394,7 @@ public class TelaConversora extends javax.swing.JFrame {
             @Override
             public void drop(DropTargetDropEvent dtde) {
 
-                // Faz realmente a função de copiar
+                // Faz a função de arrasta e solta
                 dtde.acceptDrop(DnDConstants.ACTION_COPY);
                 Transferable t = dtde.getTransferable();
 
@@ -410,7 +410,6 @@ public class TelaConversora extends javax.swing.JFrame {
                             String ofx = path;
                             setOrigem(ofx);
                             textoOrigem.setText(ofx);
-
                             setDestino(getOrigem().replaceAll(".ofx", ".csv"));
                             textoDestino.setText(getDestino());
 
