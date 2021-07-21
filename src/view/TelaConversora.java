@@ -6,6 +6,7 @@
 package view;
 
 import dados_xml.FuncaoConvertedora;
+import java.awt.Desktop;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.datatransfer.DataFlavor;
@@ -188,7 +189,7 @@ public class TelaConversora extends javax.swing.JFrame {
 
     private void jMenuSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSobreActionPerformed
         Toolkit.getDefaultToolkit().beep();
-        JOptionPane.showMessageDialog(this, "Autor: Christian Silva\nE-mail: christian.silva@lealsantos.com", "Autor do Software", WIDTH);
+        JOptionPane.showMessageDialog(this, "Autor: Christian Silva\nE-mail: christian.silva@lealsantos.com", "Autor do Software", 0);
 
     }//GEN-LAST:event_jMenuSobreActionPerformed
 
@@ -233,6 +234,9 @@ public class TelaConversora extends javax.swing.JFrame {
 //            for (String string : arquivoManipulado) {
 //                System.out.println("> " + string);
 //            }
+//            
+//            System.out.println("Origem:> " + this.origem);
+//            System.out.println("Destino:> " + this.destino);
 
             String dir = null;
             Charset charset = null;
@@ -249,13 +253,13 @@ public class TelaConversora extends javax.swing.JFrame {
 
                 Icon icon1 = icon1 = new ImageIcon(this.getClass().getResource("/icones/ic_save_black_24dp_1x.png"));
                 JOptionPane.showMessageDialog(this, "       CSV do OFX salvo com sucesso", "CSV", JOptionPane.PLAIN_MESSAGE, icon1);
-
+                abrirArquivoNoWindows(this.destino);
             } catch (IOException ex) {
-                System.err.println("Erro ao gerar o arquivo CSV\n" + ex.getMessage());
-                JOptionPane.showMessageDialog(this, "NÃ£o foi possÃ­vel gerar o arquivo CSV\n" + ex.getMessage(), "Erro na geraÃ§Ã£o do arquivo .csv", JOptionPane.ERROR_MESSAGE);
+                System.err.println("Erro ao gerar o arquivo CSV: " + ex);
+                JOptionPane.showMessageDialog(this, "Não foi possível gerar o arquivo CSV\n" + ex.getMessage(), "Erro na geração do arquivo .csv", JOptionPane.ERROR_MESSAGE);
             }
         } else {
-            JOptionPane.showMessageDialog(this, "Selecione a Origem do OFX", "Erro na seleÃ§Ã£o", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Selecione a Origem do OFX", "Erro na seleção", JOptionPane.WARNING_MESSAGE);
         }
 
     }//GEN-LAST:event_botaoConverterActionPerformed
@@ -284,11 +288,12 @@ public class TelaConversora extends javax.swing.JFrame {
                 nomeArquivo = nomeArquivo.replaceAll(".ofx", ".csv");
 
                 this.destino = abrir.getSelectedFile().toString();
-                textoDestino.setText(this.destino + "\\" + nomeArquivo);
+                this.destino = this.destino + "\\" + nomeArquivo;
+                textoDestino.setText(this.destino);
 
             }
         } else {
-            JOptionPane.showMessageDialog(this, "Selecione a Origem do OFX", "Erro na seleÃ§Ã£o", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Selecione a Origem do OFX", "Erro na seleção", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_botaoSelecionarDestinoActionPerformed
 
@@ -437,6 +442,20 @@ public class TelaConversora extends javax.swing.JFrame {
 
     public void setDestino(String destino) {
         this.destino = destino;
+    }
+    
+    
+    public static void abrirArquivoNoWindows(String caminho) {
+
+        File arquivo = new File(caminho);
+        try {
+            Desktop.getDesktop().open(arquivo);
+            //System.out.println("Abrindo arquivo " + caminho + " no windows.");
+        } catch (IOException ex) {
+            // System.err.println("Erro ao abrir arquivo " + caminho);
+            Logger.getLogger(TelaConversora.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
 }

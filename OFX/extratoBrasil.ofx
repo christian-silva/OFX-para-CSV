@@ -1,0 +1,285 @@
+OFXHEADER:100DATA:OFXSGMLVERSION:102SECURITY:NONEENCODING:USASCIICHARSET:1252COMPRESSION:NONEOLDFILEUID:NONENEWFILEUID:NONE<OFX>
+   <SIGNONMSGSRSV1>
+      <SONRS>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <DTSERVER>20210721120000[-3:BRT]</DTSERVER>
+         <LANGUAGE>POR</LANGUAGE>
+         <FI>
+            <ORG>Banco do Brasil</ORG>
+            <FID>1</FID>
+         </FI>
+      </SONRS>
+   </SIGNONMSGSRSV1>
+   <BANKMSGSRSV1>
+      <STMTTRNRS>
+         <TRNUID>1</TRNUID>
+         <STATUS>
+            <CODE>0</CODE>
+            <SEVERITY>INFO</SEVERITY>
+         </STATUS>
+         <STMTRS>
+            <CURDEF>BRL</CURDEF>
+            <BANKACCTFROM>
+               <BANKID>1</BANKID>
+               <BRANCHID>2694-8</BRANCHID>
+               <ACCTID>131762-8</ACCTID>
+               <ACCTTYPE>CHECKING</ACCTTYPE>
+            </BANKACCTFROM>
+            <BANKTRANLIST>
+               <DTSTART>20210531120000[-3:BRT]</DTSTART>
+               <DTEND>20210630120000[-3:BRT]</DTEND>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210607120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>1682.06</TRNAMT>
+                  <FITID>2021060701682060</FITID>
+                  <CHECKNUM>000142551772</CHECKNUM>
+                  <REFNUM>142.551.772</REFNUM>
+                  <MEMO>Proventos TED - 041 0330     1222956098 CHRISTIAN VILA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210607120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-1300.00</TRNAMT>
+                  <FITID>2021060711300000</FITID>
+                  <CHECKNUM>000000060701</CHECKNUM>
+                  <REFNUM>60.701</REFNUM>
+                  <MEMO>PIX - Enviado - 07/06 12:14 Christian Vilanova E Silva</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210607120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-38.30</TRNAMT>
+                  <FITID>20210607138300</FITID>
+                  <CHECKNUM>000000060702</CHECKNUM>
+                  <REFNUM>60.702</REFNUM>
+                  <MEMO>PIX - Enviado - 07/06 22:54 Christian Vilanova E Silva</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210608120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-5.29</TRNAMT>
+                  <FITID>2021060815290</FITID>
+                  <CHECKNUM>000000060801</CHECKNUM>
+                  <REFNUM>60.801</REFNUM>
+                  <MEMO>Pagamento de Boleto - BANCO BTG PACTUAL S.A.</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210608120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-19.67</TRNAMT>
+                  <FITID>20210608119670</FITID>
+                  <CHECKNUM>000000041427</CHECKNUM>
+                  <REFNUM>41.427</REFNUM>
+                  <MEMO>Pagto Energia Elétrica - CEEE DISTRIB RS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210609120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>63.49</TRNAMT>
+                  <FITID>20210609063490</FITID>
+                  <CHECKNUM>000224249770</CHECKNUM>
+                  <REFNUM>224.249.770</REFNUM>
+                  <MEMO>PIX - Recebido - 09/06 14:35 00001222956098 Christian V</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210609120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-30.98</TRNAMT>
+                  <FITID>20210609130980</FITID>
+                  <CHECKNUM>000000171941</CHECKNUM>
+                  <REFNUM>171.941</REFNUM>
+                  <MEMO>Compra com Cartão - 09/06 19:59 LOJAS AMERICANAS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210609120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-40.00</TRNAMT>
+                  <FITID>20210609140000</FITID>
+                  <CHECKNUM>597500038275</CHECKNUM>
+                  <REFNUM>4.597.500.038.275</REFNUM>
+                  <MEMO>Banco 24 Horas - 09/06 18:58 GUANABARA TREVO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210609120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-57.88</TRNAMT>
+                  <FITID>20210609157880</FITID>
+                  <CHECKNUM>000000018631</CHECKNUM>
+                  <REFNUM>18.631</REFNUM>
+                  <MEMO>Pagamento Fatura de Água - CORSAN</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210610120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-44.99</TRNAMT>
+                  <FITID>20210610144990</FITID>
+                  <CHECKNUM>000000040940</CHECKNUM>
+                  <REFNUM>40.940</REFNUM>
+                  <MEMO>Vivo Celular - VIVO MOVEL - RS</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210611120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-67.65</TRNAMT>
+                  <FITID>20210611167650</FITID>
+                  <CHECKNUM>000000162508</CHECKNUM>
+                  <REFNUM>162.508</REFNUM>
+                  <MEMO>Compra com Cartão - 11/06 17:21 POSTO MARE</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210611120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-23.91</TRNAMT>
+                  <FITID>20210611123910</FITID>
+                  <CHECKNUM>000000266261</CHECKNUM>
+                  <REFNUM>266.261</REFNUM>
+                  <MEMO>Compra com Cartão - 11/06 18:24 GUANABARA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210611120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-21.20</TRNAMT>
+                  <FITID>20210611121200</FITID>
+                  <CHECKNUM>621100196937</CHECKNUM>
+                  <REFNUM>851.621.100.196.937</REFNUM>
+                  <MEMO>Tarifa Pacote de Serviços - Cobrança referente 11/06/2021</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210614120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>17.71</TRNAMT>
+                  <FITID>20210614017710</FITID>
+                  <CHECKNUM>000235769561</CHECKNUM>
+                  <REFNUM>235.769.561</REFNUM>
+                  <MEMO>PIX - Recebido - 14/06 20:20 00001222956098 Christian V</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210614120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-53.00</TRNAMT>
+                  <FITID>20210614153000</FITID>
+                  <CHECKNUM>000000061401</CHECKNUM>
+                  <REFNUM>61.401</REFNUM>
+                  <MEMO>PIX - Enviado - 12/06 20:45 Christian Segundo De Simon</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210614120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-35.00</TRNAMT>
+                  <FITID>20210614135000</FITID>
+                  <CHECKNUM>000000061402</CHECKNUM>
+                  <REFNUM>61.402</REFNUM>
+                  <MEMO>PIX - Enviado - 12/06 23:19 Francini Gomes Ventura</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210614120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-16.00</TRNAMT>
+                  <FITID>20210614116000</FITID>
+                  <CHECKNUM>000000061403</CHECKNUM>
+                  <REFNUM>61.403</REFNUM>
+                  <MEMO>PIX - Enviado - 14/06 20:37 Thiago Noble Neves</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210618120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>1225.84</TRNAMT>
+                  <FITID>2021061801225840</FITID>
+                  <CHECKNUM>000145898822</CHECKNUM>
+                  <REFNUM>145.898.822</REFNUM>
+                  <MEMO>Proventos TED - 041 0330     1222956098 CHRISTIAN VILA</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210618120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-24.90</TRNAMT>
+                  <FITID>20210618124900</FITID>
+                  <CHECKNUM>000000162829</CHECKNUM>
+                  <REFNUM>162.829</REFNUM>
+                  <MEMO>Compra com Cartão - 18/06 17:27 PAG*PAULOFERNANDOBOR</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210618120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-437.12</TRNAMT>
+                  <FITID>202106181437120</FITID>
+                  <CHECKNUM>000000061801</CHECKNUM>
+                  <REFNUM>61.801</REFNUM>
+                  <MEMO>PIX - Enviado - 18/06 16:40 Christian Vilanova E Silva</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210623120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-420.46</TRNAMT>
+                  <FITID>202106231420460</FITID>
+                  <CHECKNUM>000000169863</CHECKNUM>
+                  <REFNUM>169.863</REFNUM>
+                  <MEMO>Compra com Cartão - 23/06 19:24 COMERCIAL ZAFFARI FI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210623120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-27.80</TRNAMT>
+                  <FITID>20210623127800</FITID>
+                  <CHECKNUM>000000269905</CHECKNUM>
+                  <REFNUM>269.905</REFNUM>
+                  <MEMO>Compra com Cartão - 23/06 19:25 COMERCIAL ZAFFARI FI</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210623120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-63.00</TRNAMT>
+                  <FITID>20210623163000</FITID>
+                  <CHECKNUM>000000372204</CHECKNUM>
+                  <REFNUM>372.204</REFNUM>
+                  <MEMO>Compra com Cartão - 23/06 20:03 DOG DO ALEMAO</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210624120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>8.46</TRNAMT>
+                  <FITID>2021062408460</FITID>
+                  <CHECKNUM>000256195589</CHECKNUM>
+                  <REFNUM>256.195.589</REFNUM>
+                  <MEMO>PIX - Recebido - 24/06 16:17 00001222956098 Christian V</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210630120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>254.21</TRNAMT>
+                  <FITID>202106300254210</FITID>
+                  <CHECKNUM>800900044846</CHECKNUM>
+                  <REFNUM>101.800.900.044.846</REFNUM>
+                  <MEMO>Restituição de IRPF</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210630120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-25.00</TRNAMT>
+                  <FITID>20210630125000</FITID>
+                  <CHECKNUM>000000176092</CHECKNUM>
+                  <REFNUM>176.092</REFNUM>
+                  <MEMO>Compra com Cartão - 30/06 21:08 PAG*pablosilveiraram</MEMO>
+               </STMTTRN>
+               <STMTTRN>
+                  <TRNTYPE>OTHER</TRNTYPE>
+                  <DTPOSTED>20210630120000[-3:BRT]</DTPOSTED>
+                  <TRNAMT>-406.51</TRNAMT>
+                  <FITID>202106301406510</FITID>
+                  <CHECKNUM>000000063001</CHECKNUM>
+                  <REFNUM>63.001</REFNUM>
+                  <MEMO>PIX - Enviado - 30/06 16:22 Christian Vilanova E Silva</MEMO>
+               </STMTTRN>
+            </BANKTRANLIST>
+            <LEDGERBAL>
+               <BALAMT>95.00</BALAMT>
+               <DTASOF>20210630120000[-3:BRT]</DTASOF>
+            </LEDGERBAL>
+         </STMTRS>
+      </STMTTRNRS>
+   </BANKMSGSRSV1>
+</OFX>

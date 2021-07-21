@@ -159,13 +159,13 @@ public class FuncaoConvertedora {
              * Insere os primeiros dados da conta e cabeçalho
              */
 
-            String inserir = "Nome do Banco;Agência;Conta;Saldo Final";
-            linhasOFX.add(inserir);
-            inserir = nomeBanco + ";" + agencia + ";" + conta + ";" + saldoFinal;
+            //String inserir = "Nome do Banco;Agencia;Conta;Saldo Final";
+            //linhasOFX.add(inserir);
+            //inserir = nomeBanco + ";" + agencia + ";" + conta + ";" + saldoFinal;
             //System.out.println("inserir banco: " + inserir);
-            linhasOFX.add(inserir);
-            inserir = "";
-            linhasOFX.add(inserir);
+            //linhasOFX.add(inserir);
+            //inserir = "";
+            //linhasOFX.add(inserir);
             linhasOFX.add(getCabecalhoOFX());
 
             /**
@@ -182,6 +182,7 @@ public class FuncaoConvertedora {
                     String TRNTYPE = null;
                     String DTPOSTED = null;
                     String TRNAMT = null;
+                    String IDENT = null;
                     String REFNUM = null;
                     String MEMO = null;
 
@@ -196,7 +197,7 @@ public class FuncaoConvertedora {
                         //data
                         DTPOSTED = element.getElementsByTagName("DTPOSTED").item(0).getTextContent().substring(0, 8);
                         DTPOSTED = DTPOSTED.substring(6, 8) + "/" + DTPOSTED.substring(4, 6) + "/" + DTPOSTED.substring(0, 4);
-                    } catch (Exception e) {
+                    } catch (DOMException e) {
                         System.err.println("DTPOSTED - " + e.getMessage());
                         DTPOSTED = "";
                     }
@@ -206,6 +207,14 @@ public class FuncaoConvertedora {
                     } catch (Exception e) {
                         System.err.println("TRNAMT - " + e.getMessage());
                         TRNAMT = "";
+                    }
+                    
+                    try {
+                        //Ident
+                        IDENT = element.getElementsByTagName("FITID").item(0).getTextContent();
+                    } catch (Exception e) {
+                        System.err.println("FITID - " + e.getMessage());
+                        IDENT = "";
                     }
                     try {
                         //Referencia
@@ -222,7 +231,8 @@ public class FuncaoConvertedora {
                         MEMO = "";
                     }
 
-                    String linha = DTPOSTED + ";" + TRNTYPE + ";" + REFNUM + ";" + MEMO + ";" + TRNAMT;
+                    String linha = DTPOSTED + ";" + TRNTYPE + ";" + IDENT + ";" + REFNUM + ";" + MEMO + ";" + TRNAMT + ";" 
+                            +nomeBanco+ ";" +agencia+ ";" +conta+ ";" + saldoFinal;
                     //System.out.println("linha: " + linha);
                     linhasOFX.add(linha);
 
@@ -235,7 +245,8 @@ public class FuncaoConvertedora {
     }
 
     private static String getCabecalhoOFX() {
-        String cabecalho = "DATA;TIPO;REFERÊNCIA;DESCRIÇÃO;VALOR";
+        String cabecalho = "DATA;TIPO;IDENT;REFERENCIA;DESCRICAO;VALOR;BANCO;AGENCIA;CONTA;SALDO_FINAL";
         return cabecalho;
     }
+    
 }
